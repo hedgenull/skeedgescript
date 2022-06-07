@@ -13,7 +13,7 @@ import argparse
 ACCUMULATOR = 0
 
 
-def interpret(i: str, is_file: bool = False, last_goto: int = 0):
+def interpret(i: str, is_file: bool = False):
     """Interpret SkeedgeScript code."""
 
     global ACCUMULATOR
