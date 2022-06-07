@@ -10,52 +10,60 @@
 
 import argparse
 
-val = 0
+ACCUMULATOR = 0
 
 
 def interpret(i: str, is_file: bool = False, last_goto: int = 0):
     """Interpret SkeedgeScript code."""
 
-    global val
+    global ACCUMULATOR
     tokens = i.split()
 
     for o, t in enumerate(tokens):
         match t:
             case "skeedge":
-                val = 0
+                ACCUMULATOR = 0
             case "SKEEDGE":
-                val = 1
+                ACCUMULATOR = 1
             case "Skeedge":
-                val += 1
+                ACCUMULATOR += 1
             case "skeedgE":
-                val -= 1
+                ACCUMULATOR -= 1
             case "SKeedge":
-                val += 2
+                ACCUMULATOR += 2
             case "skeedGE":
-                val -= 2
-            case "sKeedge":
-                val = -val
+                ACCUMULATOR -= 2
             case "skeedGe":
-                val = +val
+                ACCUMULATOR = +ACCUMULATOR
             case "skeEdge":
-                print(val)
+                print(ACCUMULATOR)
             case "SKEeDGE":
-                print(chr(val), end="") if is_file else print(chr(val))
+                print(chr(ACCUMULATOR), end="") if is_file else print(chr(ACCUMULATOR))
             case "SkeedgE":
                 if tokens[o + 1].isdigit():
-                    val += int(tokens[o + 1])
+                    ACCUMULATOR += int(tokens[o + 1])
             case "sKEEDGe":
                 if tokens[o + 1].isdigit():
-                    val -= int(tokens[o + 1])
+                    ACCUMULATOR -= int(tokens[o + 1])
             case "SkEeDgE":
                 if tokens[o + 1].isdigit():
-                    val = int(tokens[o + 1])
+                    ACCUMULATOR = int(tokens[o + 1])
             case "sKeEdGe":
                 i = input("")
                 if i.isdigit():
-                    val = int(i)
+                    ACCUMULATOR = int(i)
                 else:
-                    val = ord(i[0])
+                    ACCUMULATOR = ord(i[0])
+            case "sKeedGe":
+                if ACCUMULATOR > 0:
+                    ACCUMULATOR = 0
+                else:
+                    ACCUMULATOR = 1
+            case "SkEEDgE":
+                if ACCUMULATOR > 0:
+                    ACCUMULATOR = 1
+                else:
+                    ACCUMULATOR = 0
             case _ as err:
                 if not is_file:
                     print(f"Error: Unknown command '{err}'")
