@@ -16,4 +16,4 @@
 | `SkEeDge` | Set accumulator to next value                                                              |
 | `sKeEdGe` | Set accumulator to stdin input (integer if possible, otherwise ordinal of first character) |
 | `sKeedGe` | If accumulator is greater than 0, set it to 0. Otherwise, set it to 1.                     |
-| `SkEEDgE` | If accumulator is greater than 0, set it to 1. Otherwise, it's set to 0.                   |
+| `SkEEDgE` | If accumulator is greater than 0, set it to 1. Otherwise, set it to 0.                     |
