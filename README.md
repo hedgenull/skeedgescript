@@ -1,6 +1,6 @@
 # SkeedgeScript
 
-SkeedgeScript is an accumulative, skeedge-based, esoteric programming language. Here's a simple "Hello World!" program in SkeedgeScript:
+SkeedgeScript is an accumulative, skeedge-based, esoteric programming language. Here's a simple (if you can call it that) "Hello World!" program in SkeedgeScript:
 ```
 SkeedgE 72
 SKEeDGE
