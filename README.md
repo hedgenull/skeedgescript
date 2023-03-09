@@ -1,6 +1,6 @@
 # SkeedgeScript
 
-SkeedgeScript is an accumulative, skeedge-based, esoteric programming language. Here's a simple (if you can call it that) "Hello World!" program in SkeedgeScript:
+SkeedgeScript is an accumulative, skeedge-based, esoteric programming language. Here's a simple "Hello World!" program in SkeedgeScript:
 ```
 SkeedgE 72
 SKEeDGE
@@ -31,4 +31,4 @@ SKEeDGE
 which prints the following:
 ```Hello, World!```
 
-Since newlines in SkeedgeScript are ignored, all programs can be written on one line for even less readability and even more skeedgeability.
+Since newlines in SkeedgeScript are ignored, all programs can be written on one line for even less readability and even more skeedgeability. Keep in mind that the above program is the shortest SkeedgeScript program possible that would print `Hello, World!`. It is possible to make a much longer program that does not use any numbers. This would as a result have greater skeedgeability.
