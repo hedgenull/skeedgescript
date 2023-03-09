@@ -31,4 +31,4 @@ SKEeDGE
 which prints the following:
 ```Hello, World!```
 
-Since newlines in SkeedgeScript are ignored, all programs can be written on one line.
+Since newlines in SkeedgeScript are ignored, all programs can be written on one line for even less readability and even more skeedgeability.
